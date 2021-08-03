@@ -172,7 +172,7 @@ function cards() {
                 <div class="menu__item-divider"></div>
                 <div class="menu__item-price">
                     <div class="menu__item-cost">Цена:</div>
-                    <div class="menu__item-total"><span>${this.price}</span> грн/день</div>
+                    <div class="menu__item-total"><span>${this.price}</span> р/день</div>
                 </div>
             `;
       this.parent.append(element);
@@ -759,25 +759,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-window.addEventListener('DOMContentLoaded', function() {
-    const modalTimerId = setTimeout(() => (0,_modules_modal__WEBPACK_IMPORTED_MODULE_1__.openModal)('.modal', modalTimerId), 50000);
 
-    (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_0__.default)('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
-    (0,_modules_modal__WEBPACK_IMPORTED_MODULE_1__.default)('[data-modal]', '.modal', modalTimerId);
-    (0,_modules_timer__WEBPACK_IMPORTED_MODULE_2__.default)('.timer', '2020-06-11');
-    (0,_modules_cards__WEBPACK_IMPORTED_MODULE_3__.default)();
-    (0,_modules_calc__WEBPACK_IMPORTED_MODULE_4__.default)();
-    (0,_modules_forms__WEBPACK_IMPORTED_MODULE_5__.default)('form', modalTimerId);
-    (0,_modules_slider__WEBPACK_IMPORTED_MODULE_6__.default)({
-        container: '.offer__slider',
-        slide: '.offer__slide',
-        nextArrow: '.offer__slider-next',
-        prevArrow: '.offer__slider-prev',
-        totalCounter: '#total',
-        currentCounter: '#current',
-        wrapper: '.offer__slider-wrapper',
-        field: '.offer__slider-inner'
-    });
+const modalTimerId = setTimeout(() => (0,_modules_modal__WEBPACK_IMPORTED_MODULE_1__.openModal)('.modal', modalTimerId), 50000);
+
+(0,_modules_tabs__WEBPACK_IMPORTED_MODULE_0__.default)('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
+(0,_modules_modal__WEBPACK_IMPORTED_MODULE_1__.default)('[data-modal]', '.modal', modalTimerId);
+(0,_modules_timer__WEBPACK_IMPORTED_MODULE_2__.default)('.timer', '2021-08-11');
+(0,_modules_cards__WEBPACK_IMPORTED_MODULE_3__.default)();
+(0,_modules_calc__WEBPACK_IMPORTED_MODULE_4__.default)();
+(0,_modules_forms__WEBPACK_IMPORTED_MODULE_5__.default)('form', modalTimerId);
+(0,_modules_slider__WEBPACK_IMPORTED_MODULE_6__.default)({
+  container: '.offer__slider',
+  slide: '.offer__slide',
+  nextArrow: '.offer__slider-next',
+  prevArrow: '.offer__slider-prev',
+  totalCounter: '#total',
+  currentCounter: '#current',
+  wrapper: '.offer__slider-wrapper',
+  field: '.offer__slider-inner'
 });
 })();
 
